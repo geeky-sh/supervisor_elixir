@@ -10,7 +10,7 @@ defmodule Spvsr.Application do
     children = [
       # Starts a worker by calling: Spvsr.Worker.start_link(arg)
       # {Spvsr.Worker, arg},
-      # {Spvsr.Stack, [1, 2, 3, 4]}
+      {Spvsr.More.Supervisor, [1, 2, 3, 4]}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
